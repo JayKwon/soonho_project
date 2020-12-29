@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="kr">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+    <link rel="stylesheet" type="text/css" href="../css/reset.css">
+    <title>텍스트 입력하기 실습</title>
+  </head>
+  <body>
+    <header class="header_area">
+      <div class="header_top">
+        <h1 class="header_top_title">
+          Fiuid
+        </h1>
+      </div>
+      <nav class="header_bottom">
+        <ul class="left_nav">
+          <li> <a href="#">첫번째</a></li>
+          <li><a href="#">두번째</a></li>
+          <li><a href="#">세번째</a></li>
+          <li><a href="#">네번째</a></li>
+          <li><a href="#">다섯번째</a></li>
+          <li><a href="#">여섯번째</a></li>
+        </ul>
+        <ul class="right_nav">
+          <li><a href="#">우측 1번</a></li>
+          <li><a href="#">우측 2번</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="section_area">
+      <aside class="aside_menu_area">
+        <ul class="menu_list">
+          <li><a href="#">좌측메뉴 1</a></li>
+          <li><a href="#">좌측메뉴 2</a></li>
+          <li><a href="#">좌측메뉴 3</a></li>
+          <li><a href="#">좌측메뉴 4</a></li>
+          <li><a href="#">좌측메뉴 5</a></li>
+        </ul>
+      </aside>
+    <article class="article_area">
+      <div class="article_item">
+        <h2 class="article_title">1. 개발 도구</h2>
+        <span class="article_dis">
+          하지만 JavaScript의 막강한 기능은 웹 브라우저의 각 벤더 사에서 필수적으로 구현할만큼 성장해갔다. 마이크로소프트에서는 이를 채택함과 동시에 자사만의 문법을 끼워 넣어 JScript를 탄생시켰다. 넷스케이프가 여러 문제에도 불구하고 점유율을 막대하게 차지해가던 어느 95년 중반, MS가 Windows 95 Plus에서 IE 1.0를 선보였다. 이것이 바로 제1차 브라우저 전쟁이라 불리는 사건의 시작이다.[7]
+
+제1차 브라우저 전쟁에서 MS는 OS 점유율을 늘려감에 따라 사용자들을 IE를 사용하도록 지속적으로 유도하였고, 이에 버티지 못한 넷스케이프는 기어코 망하고 만다.
+
+MS에서 1999년에 본래 아웃룩에서 쓰였던 IXMLHTTPRequest라는 이름으로 XMLHTTP wrapper로서 xml request 기능을 제공하기 시작했다. 넷스케이프의 후예를 자처하는 모질라 재단에서도 이것을 2002년에 구현시켰다. 이후 주목 받지 못하고 있다가 구글에 의해 String 기반의 Data 전송 방식을 AJAX라는 이름으로 조합해 선보이면서 AJAX 인터넷 신세계가 열리고 말 그대로 대박이 났다.
+
+이렇듯 JS는 각 벤더 사마다 다른 것이 문제인 것을 글을 읽으면 쉽게 알 수 있을 것이다. 하지만 이를 단일화한 움직임은 이미 97년 ECMA TC39라는 문서를 통해 시작이 되었지만, 각 벤더(특히 MS)의 비협조적인 태도로 인해 글러 먹었는데. 그러다가 두 번째 브라우저 전쟁이 발발한 후 구글한테 처참하게 발린 MS가 깽깽 거리고 나서야 ECMAScript(이하 ES) 5가 제정되고 표준 문제가 다소 해결되었다.[8]
+
+한편 그렇게 표준화를 거친 JS는 AJAX, jQuery 등의 등장으로 거침없는 발전을 보였고, 기어이 Node.js의 등장으로 Server side 언어로서 탈바꿈하게 된다. JIT 컴파일 방식을 도입한 구글의 V8이라는 JavaScript 엔진을 개발하였고, ES6 구현율이 당시 80% ~ 현재 99%에 달하면서 CommonJS, AMD 진영 등의 등장도 나타났다. 과거의 JS와 비교해 보면 격세지감마저 들 정도로 그야말로 장족의 발전이다.
+
+최근 들어 JavaScript는 웹 디자이너들에게도 교육이 되고 있는 만큼 진입 장벽이 타 언어에 비해 낮은 편으로 인식되고 있다. 해외는 front-end 전담 개발자가 있을 만큼 전문화되어있는 반면, 국내에서는 수준이 현격히 낮은 만큼 일반인도 쉽게 접근하고 배울 수 있다. 구글 등을 비롯한 여러 벤더 사에서는 이 언어를 활용한 다양한 플랫폼 환경을 지원하고 있으며, Chrome Extension이나 App들이 그 좋은 예이다. 순수 JS로 이루어져 있어 실력이 된다면 자신만의 것들을 구현해 배포할 수도 있기 때문. 하지만 그렇다고 해서 JavaScript가 마냥 쉬운 언어라고 생각하면 오산이다. 동적 타입 언어인 만큼 예상과 다른 동작을 하는 경우도 많고, 콜백과 비동기 처리는 초보자 입장에서 코드 리딩이 굉장히 어렵다. 즉 입문은 쉬우나 배우다보면 벽에 막히는 언어. 하지만 ES6로 넘어와서는 콜백이 비교적 편해졌다. 하지만 일부 구형 브라우저(대표적으로 IE)는 지원을 하지 않는다!
+
+원래 JavaScript 엔진들은 모두 실시간 인터프리팅을 하고 있었는데, 모질라에서 SpiderMonkey 엔진에 JIT 컴파일 방식을 도입했다. 이는 JavaScript 엔진으로는 최초로 도입한 것이고, 이 때 알려진 것으로는 순수 JavaScript 성능만 기존 버전의 20~40배에 달했다.[9] 그리고 구글 역시 V8이라는 JavaScript 엔진
+        </span>
+      </div>
+      <div class="article_item">
+        <h2 class="article_title">2. 배포 도구</h2>
+        <span class="article_dis">
+          하지만 JavaScript의 막강한 기능은 웹 브라우저의 각 벤더 사에서 필수적으로 구현할만큼 성장해갔다. 마이크로소프트에서는 이를 채택함과 동시에 자사만의 문법을 끼워 넣어 JScript를 탄생시켰다. 넷스케이프가 여러 문제에도 불구하고 점유율을 막대하게 차지해가던 어느 95년 중반, MS가 Windows 95 Plus에서 IE 1.0를 선보였다. 이것이 바로 제1차 브라우저 전쟁이라 불리는 사건의 시작이다.[7]
+
+제1차 브라우저 전쟁에서 MS는 OS 점유율을 늘려감에 따라 사용자들을 IE를 사용하도록 지속적으로 유도하였고, 이에 버티지 못한 넷스케이프는 기어코 망하고 만다.
+
+MS에서 1999년에 본래 아웃룩에서 쓰였던 IXMLHTTPRequest라는 이름으로 XMLHTTP wrapper로서 xml request 기능을 제공하기 시작했다. 넷스케이프의 후예를 자처하는 모질라 재단에서도 이것을 2002년에 구현시켰다. 이후 주목 받지 못하고 있다가 구글에 의해 String 기반의 Data 전송 방식을 AJAX라는 이름으로 조합해 선보이면서 AJAX 인터넷 신세계가 열리고 말 그대로 대박이 났다.
+
+이렇듯 JS는 각 벤더 사마다 다른 것이 문제인 것을 글을 읽으면 쉽게 알 수 있을 것이다. 하지만 이를 단일화한 움직임은 이미 97년 ECMA TC39라는 문서를 통해 시작이 되었지만, 각 벤더(특히 MS)의 비협조적인 태도로 인해 글러 먹었는데. 그러다가 두 번째 브라우저 전쟁이 발발한 후 구글한테 처참하게 발린 MS가 깽깽 거리고 나서야 ECMAScript(이하 ES) 5가 제정되고 표준 문제가 다소 해결되었다.[8]
+
+한편 그렇게 표준화를 거친 JS는 AJAX, jQuery 등의 등장으로 거침없는 발전을 보였고, 기어이 Node.js의 등장으로 Server side 언어로서 탈바꿈하게 된다. JIT 컴파일 방식을 도입한 구글의 V8이라는 JavaScript 엔진을 개발하였고, ES6 구현율이 당시 80% ~ 현재 99%에 달하면서 CommonJS, AMD 진영 등의 등장도 나타났다. 과거의 JS와 비교해 보면 격세지감마저 들 정도로 그야말로 장족의 발전이다.
+
+최근 들어 JavaScript는 웹 디자이너들에게도 교육이 되고 있는 만큼 진입 장벽이 타 언어에 비해 낮은 편으로 인식되고 있다. 해외는 front-end 전담 개발자가 있을 만큼 전문화되어있는 반면, 국내에서는 수준이 현격히 낮은 만큼 일반인도 쉽게 접근하고 배울 수 있다. 구글 등을 비롯한 여러 벤더 사에서는 이 언어를 활용한 다양한 플랫폼 환경을 지원하고 있으며, Chrome Extension이나 App들이 그 좋은 예이다. 순수 JS로 이루어져 있어 실력이 된다면 자신만의 것들을 구현해 배포할 수도 있기 때문. 하지만 그렇다고 해서 JavaScript가 마냥 쉬운 언어라고 생각하면 오산이다. 동적 타입 언어인 만큼 예상과 다른 동작을 하는 경우도 많고, 콜백과 비동기 처리는 초보자 입장에서 코드 리딩이 굉장히 어렵다. 즉 입문은 쉬우나 배우다보면 벽에 막히는 언어. 하지만 ES6로 넘어와서는 콜백이 비교적 편해졌다. 하지만 일부 구형 브라우저(대표적으로 IE)는 지원을 하지 않는다!
+
+원래 JavaScript 엔진들은 모두 실시간 인터프리팅을 하고 있었는데, 모질라에서 SpiderMonkey 엔진에 JIT 컴파일 방식을 도입했다. 이는 JavaScript 엔진으로는 최초로 도입한 것이고, 이 때 알려진 것으로는 순수 JavaScript 성능만 기존 버전의 20~40배에 달했다.[9] 그리고 구글 역시 V8이라는 JavaScript 엔진
+        </span>
+      </div>
+    </article>
+    </section>
+  </body>
+</html>
